@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz</title>
+    </head>
+    <style>
+    body{
+        background-color: rgb(5, 5, 136);
+        background-image: url(sm.png);
+        margin: 0%;
+        overflow-x: hidden;
+        
+    }
+    header{
+        background-color: rgb(147, 21, 21);
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+    footer{
+        background-color: rgb(147, 21, 21);
+        padding: 20px;
+        text-align: center;
+        margin-top: 15px;
+        width: 100%;
+    }
+    a{
+        color: rgb(255, 255, 255);
+         font-size: 20px;
+        font-family: fantasy;
+    }
+     li{
+        display: inline;
+        margin-left: 30px;
+    }
+     ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li a:hover {
+        background-color: #a21010;
+        color: white;
+        padding: 4px;
+    }
+    li a {
+        width: 60px;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    nav {
+      width: 100%;
+      background-color: #630404;
+      color: white;
+      padding: 3px;
+      margin-bottom: 15px;
+    }
+    img{
+         border-radius: 10px;
+         margin: 20px 0;
+         align-items: center;
+         display: block;
+         margin: 20px auto;
+    }
+    label{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 16px;
+    }
+    main{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+    }
+    button{
+        padding: 5px;
+        margin: 15px;
+        width: 100px;
+        height: 30px;
+    }
+    #pergunta{
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    #fundo{ 
+        width: 70%;
+        background-color: aliceblue;
+        margin: 0 auto;
+        border-radius: 20px;
+        text-align: center;
+    }
+</style>
+    <body>
+        <header><h1>Quiz</h1></header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trajes.html">Trajes</a></li>
+                <li><a href="viloes.html">Vilões</a></li>
+                <li><a href="noticia.html">Notícias</a></li>
+                <li><a href="biografia.html">Biografia</a></li>
+            </ul>
+        </nav>
+
+        <div id="fundo">
+            <main>
+                <form>
+                    <div id="pergunta">
+                        <h2><strong>1 - Qual é o nome verdadeiro do
+                                Homem-Aranha?</strong></h2>
+                        <label><input type="radio" name="1"> Miles
+                            Morales</label><br>
+                        <label><input type="radio" name="1">Peter
+                            Quill</label><br>
+                        <label><input type="radio" name="1">Peter
+                            Parker</label><br>
+                        <label><input type="radio" name="1">Ben
+                            Reilly</label><br>
+                    </div>
+                    <div id="pergunta">
+                        <h2><strong>2 - Qual é o lema que o Tio Ben ensinou a
+                                Peter?</strong></h2>
+                        <label><input type="radio" name="2">Com grandes riscos
+                            vêm grandes chances.</label><br>
+                        <label><input type="radio" name="2">Todo poder é uma
+                            maldição.</label><br>
+                        <label><input type="radio" name="2">Com grandes poderes
+                            vêm grandes responsabilidades.</label><br>
+                        <label><input type="radio" name="2">A vingança traz
+                            justiça.</label><br>
+                    </div>
+                    <div id="pergunta">
+                        <h2><strong>3 - Qual desses nomes é um pseudônimo do
+                                vilão Mistério?</strong></h2>
+                        <label><input type="radio" name="3">Mac
+                            Gargan</label><br>
+                        <label><input type="radio" name="3">Aleksei
+                            Sytsevich</label><br>
+                        <label><input type="radio" name="3">Quentin
+                            Beck</label><br>
+                        <label><input type="radio" name="3">Dmitri
+                            Smerdyakov</label><br>
+                    </div>
+                    <div id="pergunta">
+                        <h2><strong>4 - Qual desses vilões já trocou de corpo
+                                com Peter Parker nos quadrinhos?</strong></h2>
+                        <label><input type="radio" name="4"> Duende
+                            Verde</label><br>
+                        <label><input type="radio" name="4"> Doutor
+                            Octopus</label><br>
+                        <label><input type="radio" name="4">Venom</label><br>
+                        <label><input type="radio" name="4">Morbius</label><br>
+                    </div>
+                    <div id="pergunta">
+                        <h2><strong>5 - Quem é o editor do jornal Clarim Diário
+                                que vive criticando o
+                                Homem-Aranha?</strong></h2>
+                        <label><input type="radio" name="5">Norman
+                            Osborn</label><br>
+                        <label><input type="radio" name="5">J. Jonah
+                            Jameson</label><br>
+                        <label><input type="radio" name="5"> Harry
+                            Osborn</label><br>
+                        <label><input type="radio" name="5">Eddie
+                            Brock</label><br>
+                    </div>
+                    <div id="pergunta">
+                        <h2><strong>6 - Qual vilão cria ilusões realistas com
+                                tecnologia?</strong></h2>
+                        <label><input type="radio" name="6">Lagarto </label><br>
+                        <label><input type="radio" name="6">Doutor
+                            Octopus</label><br>
+                        <label><input type="radio" name="6">Venom</label><br>
+                        <label><input type="radio" name="6">Mystério</label><br>
+                    </div>
+                    <div id="pergunta">
+                        <h2><strong>7 - Qual é o nome do cientista que vira o
+                                vilão Lagarto?</strong></h2>
+                        <label><input type="radio" name="7"> Duende
+                            Verde</label><br>
+                        <label><input type="radio" name="7">Otto
+                            Octavius</label><br>
+                        <label><input type="radio" name="7">Curt
+                            Connors</label><br>
+                        <label><input type="radio" name="7">Norman
+                            Osborn</label><br>
+                    </div>
+                    <div id="pergunta">
+                        <h2><strong>8 - Qual versão do Homem-Aranha toca
+                                guitarra e é punk?</strong></h2>
+                        <label><input type="radio"
+                                name="8">Spider-Gwen</label><br>
+                        <label><input type="radio" name="8">
+                            Spider-Punk</label><br>
+                        <label><input type="radio"
+                                name="8">Spider-Ride</label><br>
+                        <label><input type="radio" name="8">Homem-Aranha
+                            2099</label><br>
+                    </div>
+                    <div id="pergunta">
+                        <h2><strong>9 - Qual Aranha é uma versão noir, que vive
+                                em um mundo dos anos 1930?</strong></h2>
+                        <label><input type="radio" name="9"> Homem-Aranha
+                            Noir</label><br>
+                        <label><input type="radio" name="9"> Aranha
+                            Noir</label><br>
+                        <label><input type="radio" name="9">Aranha
+                            Sombria</label><br>
+                        <label><input type="radio"
+                                name="9">Spider-Gwen</label><br>
+                    </div>
+                    <div id="pergunta">
+                        <h2><strong>10 - Qual é a aparência do
+                                Aracnossauro?</strong></h2>
+                        <label><input type="radio" name="10"> Ele tem a forma de
+                            um Homem-Aranha gigante</label><br>
+                        <label><input type="radio" name="10">Ele é um dinossauro
+                            com o traje tradicional do Homem-Aranha</label><br>
+                        <label><input type="radio" name="10">Ele é um lagarto
+                            humanoide com poderes de aranha. </label><br>
+                        <label><input type="radio" name="10">Ele tem corpo
+                            humano e cabeça de dinossauro</label><br>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </main>
+        </div>
+
+        <script>
+    const correctAnswers = {
+        1: "Peter Parker",
+        2: "Com grandes poderes vêm grandes responsabilidades.",
+        3: "Quentin Beck",
+        4: "Doutor Octopus",
+        5: "J. Jonah Jameson",
+        6: "Mystério",
+        7: "Curt Connors",
+        8: "Spider-Punk",
+        9: "Homem-Aranha Noir",
+        10: "Ele é um dinossauro com o traje tradicional do Homem-Aranha"
+    };
+
+
+    function normalizeText(text) {
+        return text.trim().replace(/\s+/g, ' ');
+    }
+
+    function checkAnswers(event) {
+        event.preventDefault();
+
+        let score = 0;
+        const totalQuestions = Object.keys(correctAnswers).length;
+
+        for (let i = 1; i <= totalQuestions; i++) {
+            const selectedOption = document.querySelector(`input[name="${i}"]:checked`);
+            if (selectedOption) {
+                const answerText = normalizeText(selectedOption.parentNode.textContent);
+                const correctText = normalizeText(correctAnswers[i]);
+                if (answerText === correctText) {
+                    score++;
+                }
+            }
+        }
+
+        alert(`Você acertou ${score} de ${totalQuestions} perguntas!`);
+    }
+
+    document.querySelector('form').addEventListener('submit', checkAnswers);
+</script>
+
+        <footer><h1> </h1></footer>
+    </body>
+</html>
