@@ -3,35 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Notícias</title>
+        <title>notícia</title>
     </head>
     <style>
     body{
-        background-color: rgb(5, 5, 136);
-        background-image: url(sm.png);
-        margin: 0%;
-        overflow-x: hidden;
-    }
-    header{
-        background-color: rgb(147, 21, 21);
-        padding: 15px;
-        text-align: center;
-        width: 100%;
-    }
-    footer{
-        background-color: rgb(147, 21, 21);
-        padding: 20px;
-        text-align: center;
-        margin-top: 15px;
-        width: 100%;
-    }
-    a{
-        color: rgb(255, 255, 255);
-        font-size: 20px;
-        font-family: fantasy;
-        text-decoration: none;
-    }
-     li{
+    background-color: rgb(4, 57, 137);
+    margin: 0%;
+    overflow-x: hidden;
+}
+header{
+    background-color: rgb(189, 14, 14);
+    color: aliceblue;
+    padding: 1rem;
+    width: 100%;
+}
+footer{
+    background-color: rgb(189, 14, 14);
+    color: aliceblue;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+ li{
         display: inline;
         margin-left: 30px;
     }
@@ -42,90 +35,98 @@
     }
     li a:hover {
         background-color: #a21010;
-        color: white;
+        color: rgb(226, 225, 225);
         padding: 4px;
     }
     li a {
         width: 60px;
         background-color: transparent;
         text-decoration: none;
+        transition: background-color 0.3s;
     }
     nav {
       width: 100%;
-      background-color: #630404;
       color: white;
       padding: 3px;
       margin-bottom: 15px;
     }
+    a{
+        color: rgb(255, 255, 255);
+        font-size: 2vh;
+        font-family: fantasy;
+    }
+    img{
+        padding: 20px;
+    }
+    h1{
+        text-align: center;
+    }
     main{
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0 auto;
-        padding: 20px;
+        color: aliceblue;
+        display: inline;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
     }
-    #fundo{
-        display: block;
-        width: 70%;
-        height: 700px;
-        background-color: aliceblue;
-        margin: 5px auto;
-        border-radius: 20px;
+    img{
+        width: 80%;
+        border-radius: 40px;
+    }
+    .noticia{
+        width: 290px;
+        height: 250px;
+        margin: 2%;
         text-align: center;
-        padding: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
     }
-    #card{
-        width: 70%;
-        height: 20%;
-        margin: 15px auto;
-        background-color: rgb(164, 13, 23);
-        border-radius: 20px;
-        padding: 5px;
-        text-align: center;
-    }
-    
 </style>
     <body>
-        <header><h1>Notícias</h1></header>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="trajes.html">Trajes</a></li>
-                <li><a href="viloes.html">Vilões</a></li>
-                <li><a href="biografia.html">Biografia</a></li>
-                <li><a href="quiz.html">Quiz</a></li>
-            </ul>
-        </nav>
+        <header> <h1>Homem-Aranha</h1>
+            <nav>
+                <ul>
+                    <li><a href="trajes.html">Trajes</a></li>
+                    <li><a href="viloes.html">Vilões</a></li>
+                    <li><a href="noticia.html">Notícias</a></li>
+                    <li><a href="biografia.html">Biografia</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </header>
 
         <main>
-            <div id="fundo">
-                <div id="card">
-                    <a
-                        href="https://recreio.com.br/noticias/entretenimento/homem-aranha-noir-tudo-o-que-ja-sabemos-sobre-serie-live-action.phtml">Homem-Aranha
-                        Noir: Tudo o que já sabemos sobre a série
-                        live-action</a>
-                    <h2>Recreio</h2>
-                </div>
-                <div id="card">
-                    <a
-                        href="https://www.cnnbrasil.com.br/entretenimento/homem-aranha-4-ganha-data-de-estreia-e-titulo-oficial-veja/">“Homem-Aranha
-                        4” ganha data de estreia e título oficial; veja</a>
-                    <h2>CNNBrasil</h2>
-                </div>
-                <div id="card">
-                    <a
-                        href="https://legadodamarvel.com.br/homem-aranha-seu-amigao-da-vizinhanca-tera-2a-temporada/">Homem-Aranha:
-                        Seu Amigão da Vizinhança terá 2ª temporada?</a>
-                    <h2>Legado da Marvel</h2>
-                </div>
-                <div id="card">
-                    <a
-                        href="https://legadodamarvel.com.br/homem-aranha-seu-amigao-da-vizinhanca-tera-2a-temporada/">Aranhaverso
-                        3: Data de estreia, vilão e tudo o que sabemos</a>
-                    <h2>Legado da Marvel</h2>
-                </div>
-
+            <div class="noticia">
+                <img
+                    src="https://recreio.com.br/media/_versions/2025/05/homem-aranha-noir_capa_widelg.jpg">
+                <a
+                    href="https://recreio.com.br/noticias/entretenimento/homem-aranha-noir-tudo-o-que-ja-sabemos-sobre-serie-live-action.phtml">Homem-Aranha
+                    Noir: Tudo o que já sabemos sobre a série
+                    live-action</a>
+                <h2>Recreio</h2>
             </div>
-
+            <div class="noticia">
+                <img
+                    src="https://th.bing.com/th/id/OIP.kMJNmdwdCdgCouJHrMiHxQHaEK?rs=1&pid=ImgDetMain">
+                <a
+                    href="https://www.cnnbrasil.com.br/entretenimento/homem-aranha-4-ganha-data-de-estreia-e-titulo-oficial-veja/">“Homem-Aranha
+                    4” ganha data de estreia e título oficial; veja</a>
+                <h2>CNNBrasil</h2>
+            </div>
+            <div class="noticia">
+                <img src="https://legadodamarvel.com.br/wp-content/uploads/2025/02/legadodamarvel-seu-amigao-da-vizinhanca-homem-aranha-personagens-characters-spider-man-friendly-neighborhood.webp">
+                <a
+                    href="https://legadodamarvel.com.br/homem-aranha-seu-amigao-da-vizinhanca-tera-2a-temporada/">Homem-Aranha:
+                    Seu Amigão da Vizinhança terá 2ª temporada?</a>
+                <h2>Legado da Marvel</h2>
+            </div>
+            <div class="noticia">
+                <img src="https://legadodamarvel.com.br/wp-content/uploads/2024/08/legadodamarvel-spider-man-beyond-the-spider-verse-homem-aranha-alem-do-aranhaverso-logo.webp">
+                <a
+                        href="https://legadodamarvel.com.br/aranhaverso-3-data-de-estreia-vilao-e-tudo-o-que-sabemos/">Aranhaverso
+                        3: Data de estreia, vilão e tudo o que sabemos</a>
+                <h2>Legado da Marvel</h2>
+            </div>
         </main>
 
         <footer><h1></h1></footer>

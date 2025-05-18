@@ -1,37 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Quiz</title>
-    </head>
-    <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<style>
     body{
-        background-color: rgb(5, 5, 136);
-        background-image: url(sm.png);
-        margin: 0%;
-        overflow-x: hidden;
-        
-    }
-    header{
-        background-color: rgb(147, 21, 21);
-        padding: 15px;
-        text-align: center;
-        width: 100%;
-    }
-    footer{
-        background-color: rgb(147, 21, 21);
-        padding: 20px;
-        text-align: center;
-        margin-top: 15px;
-        width: 100%;
-    }
-    a{
-        color: rgb(255, 255, 255);
-         font-size: 20px;
-        font-family: fantasy;
-    }
-     li{
+    background-color: rgb(4, 57, 137);
+    margin: 0%;
+    overflow-x: hidden;
+}
+header{
+    background-color: rgb(189, 14, 14);
+    color: aliceblue;
+    padding: 1rem;
+    width: 100%;
+}
+footer{
+    background-color: rgb(189, 14, 14);
+    color: aliceblue;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+ li{
         display: inline;
         margin-left: 30px;
     }
@@ -42,72 +35,65 @@
     }
     li a:hover {
         background-color: #a21010;
-        color: white;
+        color: rgb(226, 225, 225);
         padding: 4px;
     }
     li a {
         width: 60px;
         background-color: transparent;
         text-decoration: none;
+        transition: background-color 0.3s;
     }
     nav {
       width: 100%;
-      background-color: #630404;
       color: white;
       padding: 3px;
       margin-bottom: 15px;
     }
+    a{
+        color: rgb(255, 255, 255);
+        font-size: 2vh;
+        font-family: fantasy;
+    }
     img{
-         border-radius: 10px;
-         margin: 20px 0;
-         align-items: center;
-         display: block;
-         margin: 20px auto;
+        margin: 40px;
+    }
+    h1{
+        text-align: center;
+    }
+    main{
+        text-align: center;
+        color: aliceblue;
     }
     label{
         display: flex;
-        align-items: center;
         gap: 8px;
         font-size: 16px;
-    }
-    main{
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0 auto;
-    }
-    button{
-        padding: 5px;
-        margin: 15px;
-        width: 100px;
-        height: 30px;
     }
     #pergunta{
         padding: 15px;
         border-radius: 8px;
         margin-bottom: 20px;
-    }
-    #fundo{ 
-        width: 70%;
-        background-color: aliceblue;
-        margin: 0 auto;
-        border-radius: 20px;
-        text-align: center;
+        padding-left: 200px;
+        padding-right: 200px;
     }
 </style>
-    <body>
-        <header><h1>Quiz</h1></header>
+<body>
+    <header>
+        <h1>Quiz Do Homem-Aranha</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="trajes.html">Trajes</a></li>
-                <li><a href="viloes.html">Vilões</a></li>
-                <li><a href="noticia.html">Notícias</a></li>
-                <li><a href="biografia.html">Biografia</a></li>
-            </ul>
-        </nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="trajes.html">Trajes</a></li>
+                    <li><a href="viloes.html">Vilões</a></li>
+                    <li><a href="noticia.html">Notícias</a></li>
+                    <li><a href="biografia.html">Biografia</a></li>
+                </ul>
+            </nav>
+    </header>
 
-        <div id="fundo">
-            <main>
-                <form>
+    <main>
+        <form>
                     <div id="pergunta">
                         <h2><strong>1 - Qual é o nome verdadeiro do
                                 Homem-Aranha?</strong></h2>
@@ -179,12 +165,12 @@
                     <div id="pergunta">
                         <h2><strong>7 - Qual é o nome do cientista que vira o
                                 vilão Lagarto?</strong></h2>
+                        <label><input type="radio" name="7">Curt
+                            Connors</label><br>
                         <label><input type="radio" name="7"> Duende
                             Verde</label><br>
                         <label><input type="radio" name="7">Otto
                             Octavius</label><br>
-                        <label><input type="radio" name="7">Curt
-                            Connors</label><br>
                         <label><input type="radio" name="7">Norman
                             Osborn</label><br>
                     </div>
@@ -270,7 +256,14 @@
 
     document.querySelector('form').addEventListener('submit', checkAnswers);
 </script>
+    </main>
 
-        <footer><h1> </h1></footer>
-    </body>
+
+
+
+
+
+
+    <footer><h1> </h1></footer>
+</body>
 </html>
